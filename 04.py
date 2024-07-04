@@ -54,3 +54,43 @@
 # 	valorF = (62.1 * p_altF) - 44.7;
 # 	return valorF;
 # }
+
+import sys
+import locale
+
+def ideal_homem(p_altH):
+    valorH = (72.7 * p_altH) - 58
+    return valorH
+
+def ideal_mulher(p_altF):
+    valorF = (62.1 * p_altF) - 44.7
+    return valorF
+
+def main():
+
+    alt_str = input("Informe sua altura (usando virgula): ")
+    alt_str = alt_str.replace(',', '.')  # troca virgula pelo ponto
+    alt = float(alt_str)
+    
+    print("_________________________________________________\n")
+    
+    sexo = input("Informe seu sexo ((M) Masculino e (F) Feminino): ").upper()
+    
+    print("_________________________________________________\n")
+    
+    if sexo == 'M':
+        resh = ideal_homem(alt)
+        print("RESPOSTA")
+        print(f"\nSeu peso ideal eh: {resh:.2f} kilos.\n")
+        print("_________________________________________________\n")
+    elif sexo == 'F':
+        resf = ideal_mulher(alt)
+        print("RESPOSTA")
+        print(f"\nSeu peso ideal eh: {resf:.2f} kilos.\n")
+        print("\n\n_________________________________________________\n")
+    else:
+        print("Sexo invalido. Informe M para Masculino ou F para Feminino.")
+        sys.exit(1)
+
+if __name__ == "__main__":
+    main()

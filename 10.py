@@ -30,3 +30,22 @@
 # system("pause");
 # return (0);
 # }
+
+def main():
+    val = []
+    achou = 0  #0 -> nao achou, 1 ou mais -> achou
+    busca = 0
+    
+    for cont in range(10):
+        val.append(int(input(f"Informe o {cont+1}º valor: ")))
+    
+    busca = int(input("\nInforme um valor para ser procurado: "))
+    
+    for cont in range(10):
+        if busca == val[cont]:
+            achou += 1
+    
+    print(f"\nO numero foi achado {achou} vezes\n")
+
+if __name__ == "__main__":
+    main()
