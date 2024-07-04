@@ -20,3 +20,22 @@
 # 	system("pause");
 # 	return 0;
 # }
+
+def main():
+    print("_____________________tabuada do 7________________________________")
+    for cont in range(1, 11):
+        num = 7
+        print(f"{num} X {cont} = {num * cont}")
+    
+    print("_____________________tabuada do 8________________________________")
+    for cont in range(1, 11):
+        num = 8
+        print(f"{num} X {cont} = {num * cont}")
+
+    print("_____________________tabuada do 9________________________________")
+    for cont in range(1, 11):
+        num = 9
+        print(f"{num} X {cont} = {num * cont}")
+
+if __name__ == "__main__":
+    main()

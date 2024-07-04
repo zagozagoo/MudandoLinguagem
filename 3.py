@@ -35,3 +35,21 @@
 # 	system("pause");
 # 	return 0;
 # }
+
+def main():
+    idade = int(input("Qual a idade: "))
+    sexo = str(input("QUAL O SEXO, (M) PARA MASCULINO OU (F) PARA FEMININO: "))
+    print("\n")
+
+    if sexo == "F":
+        if idade >= 16:
+            print("Voce tem direito a compra de ingressos! \n")
+        else:
+            print("Voce nao pode comprar ingressos :( \n")
+    
+    if sexo == "M":
+        print("HOMENS NAO ESTAO CONVIDADOS PARA A FESTINHA DO GLITTER")
+
+if __name__ == "__main__":
+    main()
+    

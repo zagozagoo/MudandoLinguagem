@@ -2,9 +2,6 @@
 # #include<stdlib.h>
 # #include<locale.h>
 
-# //trabalho pesquisa desordenada;
-# //Alunos: Andr� F. P. DIas e Andrey Suprano.
-
 # int main(){
 # 	setlocale(LC_ALL,"Portuguese");
 	
@@ -22,15 +19,13 @@
 # 	printf("\n Informe um valor pra ser procurado:");
 # 	fflush(stdin);
 # 	scanf("%d", &busca);
-	
 		
 # 	for(cont = 0;cont < 10; cont ++ ){
 # 		if(busca == val[cont]){
 # 			achou = achou + 1;
 # 		}
 # 	}
-# 	printf("O n�mero foi achado %d vezes.",achou);
-	
+# 	printf("O numero foi achado %d vezes.",achou);
 	
 # system("pause");
 # return (0);

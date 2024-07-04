@@ -5,8 +5,7 @@
 # int main(){
 # 	setlocale(LC_ALL,"Portuguese");
 	
-# 	int mat[5], cont = 0, matricula = 0, achou = 0;
-	
+# 	int mat[5], cont = 0, matricula = 0, achou = 0;	
 	
 # 	for(cont=0; cont<5; cont++){
 # 		printf("DIGITE O NÚMERO PARA CADASTRO DE MATRÍCULA:");
@@ -33,3 +32,24 @@
 # 	system("pause");
 # 	return 0;
 # }
+
+def main():
+    mat = []
+    for cont in range(5):
+        mat.append(int(input("Digite o numero para cadastro de matricula: ")))
+    
+    matricula = int(input("Informe a matricula para consulta: "))
+    
+    achou = False
+    for cont in range(5):
+        if matricula == mat[cont]:
+            achou = True
+            break
+    
+    if achou:
+        print("Encontrado")
+    else:
+        print("Nao Encontrado")
+
+if __name__ == "__main__":
+    main()
