@@ -7,8 +7,6 @@
 	
 # 	float sal = 0, total = 0, media = 0;
 # 	int cont = 0;
-	
-
 
 # 	for(cont = 0; cont < 5; cont++){
 # 		printf("qual seu salario?\n");

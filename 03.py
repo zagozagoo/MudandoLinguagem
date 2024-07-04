@@ -43,7 +43,7 @@ def main():
 
     if sexo == "F":
         if idade >= 16:
-            print("Voce tem direito a compra de ingressos! \n")
+            print("Voce tem direito a compra de ingressos! <3 \n")
         else:
             print("Voce nao pode comprar ingressos :( \n")
     

@@ -36,9 +36,9 @@
 def main():
     mat = []
     for cont in range(5):
-        mat.append(int(input("Digite o numero para cadastro de matricula: ")))
+        mat.append(int(input("Digite o numero para cadastro de matricula: \n")))
     
-    matricula = int(input("Informe a matricula para consulta: "))
+    matricula = int(input("Informe a matricula para consulta: \n"))
     
     achou = False
     for cont in range(5):
@@ -47,9 +47,9 @@ def main():
             break
     
     if achou:
-        print("Encontrado")
+        print("Encontrado\n")
     else:
-        print("Nao Encontrado")
+        print("Nao Encontrado\n")
 
 if __name__ == "__main__":
     main()
