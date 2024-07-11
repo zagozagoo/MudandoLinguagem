@@ -36,3 +36,31 @@
 	
 # 	return res;
 # }
+
+def calculo(p_precolitro, p_valorpgto):
+    res = p_valorpgto / p_precolitro
+    return res
+
+def main():
+    import locale
+    locale.setlocale(locale.LC_ALL, 'Portuguese')
+    
+    precolitro = 0
+    valorpgto = 0
+    
+    nome = input("Informe seu nome:\n")
+    
+    try:
+        precolitro = float(input("Informe o valor por litro de gasolina:\n"))
+        valorpgto = float(input("Informe o valor de pagamento:\n"))
+    except ValueError:
+        print("Valor inválido. Certifique-se de inserir um numero valido.")
+        return
+    
+    res = calculo(precolitro, valorpgto)
+    print("\n%s você vai abastecer %.3f litros de gasolina.\n" % (nome, res))
+    
+    input("Pressione Enter para sair.")
+
+if __name__ == "__main__":
+    main()
